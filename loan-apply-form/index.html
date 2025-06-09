@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Bazaar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <main>
+
+        <header class="bg-light py-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand me-5" href="./"><img src="../assets/imgs/sitelogo.png" alt=""></a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content">
+                            <div class="hamburger-toggle">
+                                <div class="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-content">
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 gap-4">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold active" aria-current="page" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="../about.html">About</a>
+                                </li>
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link fw-semibold dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside">Loan Products</a>
+                                    <div class="dropdown-menu border-0 shadow">
+                                        <div class="mega-content px-4">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6 py-4 border-lg-end border-0">
+                                                        <h5 style="color: #2D3079;">Business Loans</h5>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-sm-6 col-md-6 col-lg-6 col-12 mb-3 mb-lg-0 mb-md-0">
+                                                                <a href="msseLoan.html">
+                                                                    <div class="loan-product">
+                                                                        <img src="../assets/./imgs/menuImg1.png" alt=""
+                                                                            class="rounded-3">
+                                                                        <div class="pt-2">
+                                                                            <p class="mb-0 fw-semibold text-dark">MSME
+                                                                                loan</p>
+                                                                            <p class="text-dark">10 Lac - 5 Cr.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-6 col-md-6 col-lg-6 col-12 mb-3 mb-lg-0 mb-md-0">
+                                                                <a href="mudraLoan.html">
+                                                                    <div class="loan-product">
+                                                                        <img src="../assets/./imgs/submenu_02.png"
+                                                                            alt="" class="rounded-3">
+                                                                        <div class="pt-2">
+                                                                            <p class="mb-0 fw-semibold text-dark">Mudra
+                                                                                Loan</p>
+                                                                            <p class="text-dark">10 Lac - 5 Cr.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6 py-4">
+                                                        <h5 clas style="color: #2D3079;">Home Loans</h5>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-sm-6 col-md-6 col-lg-6 col-12 mb-3 mb-lg-0 mb-md-0">
+                                                                <a href="homeLoan.html">
+                                                                    <div class="loan-product">
+                                                                        <img src="../assets/./imgs/submenu_03.png"
+                                                                            alt="" class="rounded-3">
+                                                                        <div class="pt-2">
+                                                                            <p class="mb-0 fw-semibold text-dark">Home
+                                                                                Loans</p>
+                                                                            <p class="text-dark">10 Lac - 5 Cr.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-6 col-md-6 col-lg-6 col-12 mb-3 mb-lg-0 mb-md-0">
+                                                                <a href="personalLoan.html">
+                                                                    <div class="loan-product">
+                                                                        <img src="../assets/./imgs/submenu_04.png"
+                                                                            alt="" class="rounded-3">
+                                                                        <div class="pt-2">
+                                                                            <p class="mb-0 fw-semibold text-dark">
+                                                                                Personal Loan
+                                                                            </p>
+                                                                            <p class="text-dark">20Lac</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="../services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="../contact.html">Contact </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold border border-danger text-danger rounded-4 px-4"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"> <i
+                                            class="fa-solid fa-play"></i> Watch Video</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <div class="authInputArea d-flex gap-3">
+                                        <a href="../login.html">
+                                            <div class="input-group">
+                                                <button
+                                                    class="border-0 text-nowrap btn btn-primary rounded-3 fs-6">Login</button>
+                                            </div>
+                                        </a>
+                                        <a href="../signup.html">
+                                            <div class="input-group">
+                                                <button
+                                                    class="border-0 text-nowrap btn btn-primary rounded-3 fs-6">Signup</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+
+        <div id="container" class="container my-5">
+
+            <form id="multi-step-form">
+                <div class="step step-1">
+                    <!-- Step 1 form fields here -->
+                    <div class="loan-section">
+                        <div class="container">
+                            <div class="row rounded-4 overflow-hidden shadow-sm">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 colBg p-5">
+                                    <img src="../assets/imgs/sitelogo.png" alt="Paisabazaar" width="180" class="mb-3" />
+                                    <h3 class="fw-bold mb-3">Personal Loan</h3>
+                                    <ul class="list-unstyled info-list">
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Compare & Choose the
+                                            Best
+                                            Offer</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Check Loan Amount
+                                            Eligibility</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Know your Approval
+                                            Chances
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex justify-content-center align-items-center w-100">
+                                        <img src="../assets/imgs/loanformImage.png" alt="Loan Illustration"
+                                            width="350" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-5 bg-light">
+                                    <h5 class="fw-semibold text-primary mb-4">
+                                        Unlock Best <strong>Personal Loan</strong> Offers suitable for your needs from
+                                        <strong>30+ Lenders</strong>
+                                    </h5>
+                                    <ul class="list-unstyled benefit-list mb-4">
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Hand-picked offers from
+                                            30+
+                                            lenders</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Money in mins via
+                                            Pre-Approved loans</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Instant sanction and
+                                            disbursal</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Contact-less processes
+                                        </li>
+                                    </ul>
+
+                                    <label class="form-label fw-semibold">Mobile Number</label>
+                                    <div class="input-group mb-2">
+                                        <span class="input-group-text">
+                                            <img src="https://flagcdn.com/w40/in.png" alt="IN" width="20" />
+                                            &nbsp;+91 -
+                                        </span>
+                                        <input type="tel" class="form-control rounded-3" maxlength="10"
+                                            placeholder="XXXXXXXXXX" />
+                                        <small class="text-muted ms-2 mt-1">0/10 Digits</small>
+                                    </div>
+                                    <p class="text-muted small mb-3">We will check offers against your number</p>
+
+                                    <button type="button" class="btn proceed-btn w-100 next-step">Proceed</button>
+
+                                    <p class="disclaimer mt-3">
+                                        By clicking on proceed, you have read and agree to the Paisabazaar’s
+                                        <a href="#">Credit Report Terms of Use</a>,
+                                        <a href="#">Terms of Use</a> &
+                                        <a href="#">Privacy Policy</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step step-2">
+                    <h3><</h3>
+                    <div class="loan-section">
+                        <div class="container">
+                            <div class="row rounded-4 overflow-hidden shadow-sm">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 colBg p-5">
+                                    <img src="../assets/imgs/sitelogo.png" alt="Paisabazaar" width="180" class="mb-3" />
+                                    <h3 class="fw-bold mb-3">Personal Loan</h3>
+                                    <ul class="list-unstyled info-list">
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Compare & Choose the
+                                            Best
+                                            Offer</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Check Loan Amount
+                                            Eligibility</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Know your Approval
+                                            Chances
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex justify-content-center align-items-center w-100">
+                                        <img src="../assets/imgs/loanformImage.png" alt="Loan Illustration"
+                                            width="350" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-5 bg-light">
+                                    <h5 class="fw-semibold text-primary mb-4">
+                                        Unlock Best <strong>Personal Loan</strong> Offers suitable for your needs from
+                                        <strong>30+ Lenders</strong>
+                                    </h5>
+                                    <ul class="list-unstyled benefit-list mb-4">
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Hand-picked offers from
+                                            30+
+                                            lenders</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Money in mins via
+                                            Pre-Approved loans</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Instant sanction and
+                                            disbursal</li>
+                                        <li class="mb-2"><i class="bi bi-check-circle-fill"></i>Contact-less processes
+                                        </li>
+                                    </ul>
+
+                                    <label class="form-label fw-semibold">Mobile Number</label>
+                                    <div class="input-group mb-2">
+                                        <span class="input-group-text">
+                                            <img src="https://flagcdn.com/w40/in.png" alt="IN" width="20" />
+                                            &nbsp;+91 -
+                                        </span>
+                                        <input type="tel" class="form-control rounded-3" maxlength="10"
+                                            placeholder="XXXXXXXXXX" />
+                                        <small class="text-muted ms-2 mt-1">0/10 Digits</small>
+                                    </div>
+                                    <p class="text-muted small mb-3">We will check offers against your number</p>
+
+                                    <button type="button" class="btn proceed-btn w-100 next-step">Proceed</button>
+
+                                    <p class="disclaimer mt-3">
+                                        By clicking on proceed, you have read and agree to the Paisabazaar’s
+                                        <a href="#">Credit Report Terms of Use</a>,
+                                        <a href="#">Terms of Use</a> &
+                                        <a href="#">Privacy Policy</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary prev-step">Previous</button>
+                    <button type="button" class="btn btn-primary next-step">Next</button>
+                </div>
+
+                <div class="step step-3">
+                    <h3>Step 3</h3>
+                    <div class="mb-3">
+                        <label for="field3" class="form-label">Field 3:</label>
+                        <input type="text" class="form-control" id="field3" name="field3">
+                    </div>
+                    <button type="button" class="btn btn-primary prev-step">Previous</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <footer class="footer-main">
+            <div class="bg-white text-dark py-5 border-top">
+                <div class="container">
+                    <div class="row gy-4">
+                        <!-- Logo & Social -->
+                        <div class="col-md-4">
+                            <a href="/"><img src="../assets/imgs/sitelogo.png" alt="True Balance" width="150"
+                                    class="mb-2" /></a>
+                            <div class="d-flex gap-3 my-3 fs-5">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                            <p class="fw-semibold mb-1">Download the App</p>
+                            <a href="#"><img src="../assets/imgs/google-play-badge.png" alt="Google Play"
+                                    width="150" /></a>
+                        </div>
+
+                        <!-- The Company -->
+                        <div class="col-md-2">
+                            <h6 class="footer-title">The Company</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li class="ms-3"><a href="#">- Cash Loan</a></li>
+                                <li class="ms-3"><a href="#">- Level Up Loan</a></li>
+                                <li><a href="#">Learn</a></li>
+                                <li><a href="#">Who we are</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Corporate Governance</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Help Center -->
+                        <div class="col-md-3">
+                            <h6 class="footer-title">Help Center</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Raise a request</a></li>
+                                <li><a href="#">Report a Fraud/Complaint</a></li>
+                                <li><a href="#">Fraud Alerts</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Customer Support -->
+                        <div class="col-md-3">
+                            <h6 class="footer-title">Customer Support</h6>
+                            <ul class="list-unstyled small">
+                                <li>(0120)-4001028</li>
+                                <li>Email: <a href="mailto:cs@balancehero.com">cs@balancehero.com</a></li>
+                                <li>Location: Gurugram, Haryana</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h6 class="footer-title">Terms and Conditions</h6>
+                            <div class="d-flex flex-wrap small terms-links">
+                                <a href="#">Terms of Service</a>
+                                <a href="#">Promotion T&C</a>
+                                <a href="#">Wallet T&C</a>
+                                <a href="#">Coupons T&C</a>
+                                <a href="#">KYC T&C</a>
+                                <a href="#">Social Media T&C</a>
+                                <a href="#">Settlement Offer T&C</a>
+                                <a href="#">Refer and Earn</a>
+                                <a href="#">Data Deletion</a>
+                                <a href="#">Schedule of Charges</a>
+                                <a href="#">True Balance - Customer Grievance Redressal Policy</a>
+                                <a href="#">True Credits - Customer Grievance Redressal Policy</a>
+                                <a href="#">True Credits - Loan Application T&C</a>
+                                <a href="#">Processing Fee Discount Offer on Loan T&C</a>
+                                <a href="#">POSH Policy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Bottom -->
+                    <div class="row mt-4 border-top pt-3">
+                        <div class="col">
+                            <small>
+                                True Balance app (operated by Balancehero India Private Limited) is a digital lending
+                                application (DLA)
+                                of True Credits Private Limited (NBFC) and for its lending partners that facilitates its
+                                users to avail
+                                innovative financial services from True Credits or from its lending partners.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>© Copyright 2014-2025. All Rights Reserved.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <iframe width="100%" height="350"
+                    src="https://www.youtube.com/embed/fuiiJuB7tJs?autoplay=1&mute=1&loop=1&playlist=fuiiJuB7tJs"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        var currentStep = 1;
+        var updateProgressBar;
+
+        function displayStep(stepNumber) {
+            if (stepNumber >= 1 && stepNumber <= 3) {
+                $(".step-" + currentStep).hide();
+                $(".step-" + stepNumber).show();
+                currentStep = stepNumber;
+                updateProgressBar();
+            }
+        }
+
+        $(document).ready(function () {
+            $('#multi-step-form').find('.step').slice(1).hide();
+
+            $(".next-step").click(function () {
+                if (currentStep < 3) {
+                    $(".step-" + currentStep).addClass("animate__animated animate__fadeOutLeft");
+                    currentStep++;
+                    setTimeout(function () {
+                        $(".step").removeClass("animate__animated animate__fadeOutLeft").hide();
+                        $(".step-" + currentStep).show().addClass("animate__animated animate__fadeInRight");
+                        updateProgressBar();
+                    }, 500);
+                }
+            });
+
+            $(".prev-step").click(function () {
+                if (currentStep > 1) {
+                    $(".step-" + currentStep).addClass("animate__animated animate__fadeOutRight");
+                    currentStep--;
+                    setTimeout(function () {
+                        $(".step").removeClass("animate__animated animate__fadeOutRight").hide();
+                        $(".step-" + currentStep).show().addClass("animate__animated animate__fadeInLeft");
+                        updateProgressBar();
+                    }, 500);
+                }
+            });
+
+            updateProgressBar = function () {
+                var progressPercentage = ((currentStep - 1) / 2) * 100;
+                $(".progress-bar").css("width", progressPercentage + "%");
+            }
+        });
+    </script>
+</body>
+
+</html>

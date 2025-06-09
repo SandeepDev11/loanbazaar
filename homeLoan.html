@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Bazaar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <main>
+
+        <header class="bg-light py-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand me-5" href="./"><img src="./assets/imgs/sitelogo.png" alt=""></a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content">
+                            <div class="hamburger-toggle">
+                                <div class="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-content">
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 gap-4">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold active" aria-current="page" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="./about.html">About</a>
+                                </li>
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link fw-semibold dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside">Loan Products</a>
+                                    <div class="dropdown-menu border-0 shadow">
+                                        <div class="mega-content px-4">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6 py-4 border-lg-end border-0">
+                                                        <h5 style="color: #2D3079;">Business Loans</h5>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-sm-6 col-md-6 col-lg-6 col-12 mb-3 mb-lg-0 mb-md-0">
+                                                                <a href="msseLoan.html">
+                                                                    <div class="loan-product">
+                                                                        <img src="./assets/./imgs/menuImg1.png" alt=""
+                                                                            class="rounded-3">
+                                                                        <div class="pt-2">
+                                                                            <p class="mb-0 fw-semibold text-dark">MSME
+                                                                                loan</p>
+                                                                            <p class="text-dark">10 Lac - 5 Cr.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-6 col-md-6 col-lg-6 col-12 mb-3 mb-lg-0 mb-md-0">
+                                                                <a href="mudraLoan.html">
+                                                                    <div class="loan-product">
+                                                                        <img src="./assets/./imgs/submenu_02.png" alt=""
+                                                                            class="rounded-3">
+                                                                        <div class="pt-2">
+                                                                            <p class="mb-0 fw-semibold text-dark">Mudra
+                                                                                Loan</p>
+                                                                            <p class="text-dark">10 Lac - 5 Cr.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6 py-4">
+                                                        <h5 clas style="color: #2D3079;">Home Loans</h5>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-sm-6 col-md-6 col-lg-6 col-12 mb-3 mb-lg-0 mb-md-0">
+                                                                <a href="homeLoan.html">
+                                                                    <div class="loan-product">
+                                                                        <img src="./assets/./imgs/submenu_03.png" alt=""
+                                                                            class="rounded-3">
+                                                                        <div class="pt-2">
+                                                                            <p class="mb-0 fw-semibold text-dark">Home
+                                                                                Loans</p>
+                                                                            <p class="text-dark">10 Lac - 5 Cr.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-6 col-md-6 col-lg-6 col-12 mb-3 mb-lg-0 mb-md-0">
+                                                                <a href="personalLoan.html">
+                                                                    <div class="loan-product">
+                                                                        <img src="./assets/./imgs/submenu_04.png" alt=""
+                                                                            class="rounded-3">
+                                                                        <div class="pt-2">
+                                                                            <p class="mb-0 fw-semibold text-dark">
+                                                                                Personal Loan
+                                                                            </p>
+                                                                            <p class="text-dark">20Lac</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="./services.html">Services</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="./contact.html">Contact </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold border border-danger text-danger rounded-4 px-4"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"> <i
+                                            class="fa-solid fa-play"></i> Watch Video</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <div class="authInputArea d-flex gap-3">
+                                        <a href="./login.html">
+                                            <div class="input-group">
+                                                <button
+                                                    class="border-0 text-nowrap btn btn-primary rounded-3 fs-6">Login</button>
+                                            </div>
+                                        </a>
+                                        <a href="./signup.html">
+                                            <div class="input-group">
+                                                <button
+                                                    class="border-0 text-nowrap btn btn-primary rounded-3 fs-6">Signup</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+
+        <section class="msse-banner-sec">
+            <div class="container">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-6">
+                        <div class="mssebanner-img">
+                            <img src="./assets/imgs/home-loan-banner.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="mssebanner-info-parent d-flex align-items-center justify-content-center px-2 px-md-4">
+                            <div class="mssebanner-info-child">
+                                <div class="mssebanner-title mb-4">
+                                    <h2 class="mb-4">
+
+
+                                        get your dream home in</h2>
+                                    <h3>less than an hour*
+                                    </h3>
+                                </div>
+                                <div class="mssebanner-text">
+                                    <p>* digital approval only. loan disbursal subject to sanction
+                                    </p>
+                                </div>
+                                <div class="mssebanner-btn">
+                                    <button class="px-5 py-3 rounded-3 mt-4">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5 py-4 py-md-5 msse-nmbrs">
+            <div class="container pb-md-2">
+                <div class="row text-md-center">
+                    <div class="col-6 col-md-3 mb-4 mb-md-0">
+                        <h3 class="fw-bold">20<span class="ms-1">+</span></h3>
+                        <p class=" mb-0 mt-3">partner banks</p>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4 mb-md-0">
+                        <h3 class="fw-bold">7.5 lac<span class="ms-1">+</span></h3>
+                        <p class=" mb-0 mt-3">journeys completed</p>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4 mb-md-0">
+                        <h3 class="fw-bold">74,000 cr.<span class="ms-1">+</span></h3>
+                        <p class=" mb-0 mt-3">loans disbursed</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h3 class="fw-bold">6,300<span class="ms-1">+</span></h3>
+                        <p class=" mb-0 mt-3">video testimonials</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="loanNeedsWrapper">
+            <div class="container">
+                <div class="row align-items-center b-loan-box2 mt-2 mb-4 py-5">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-center">
+                        <img src="./assets/imgs/business-loan03.png" alt="" class="loanNeedsListImg img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <h3 class=" pt-3 pt-md- 0 pb-md-3">from anywhere, anytime</h3>
+                        <p class="pe-5">planning to buy a new home or build a home of your dream on the land you own? or
+                            want to renovate your existing home and make it bigger and better? look no further if you
+                            are looking for funding. we at PSB59 will help you find the best and the most affordable
+                            home loan offer for upto ₹10 crores and also get you the digital approval within 15 minutes.
+                            yes, it’s as simple as that.
+
+                            an online loan facilitating platform like no other, PSB59 offers you the convenience of
+                            choosing the home loan that’s best suited for you from 21+ private sector, public sector and
+                            NBFCs, with the help of a fully-digitised processing system that’s integrated to statutory
+                            bodies for various purposes like data fetching, authentication, etc.</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="msse-enterprises py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <div class="msse-enterprises-info">
+                            <h2 class="fs-1 text-dark py-2">
+                                Home Loans
+                            </h2>
+                            <h4 class="fs-4">Ranging from ₹ 5 lac to ₹ 5 crores
+                            </h4>
+                            <p class="pt-2 fs-5">Owning a home is a dream for many, but arranging timely and affordable
+                                finance can be a challenge. Our platform simplifies the home loan process by making
+                                approvals faster, more transparent, and easily accessible to individuals from all walks
+                                of life.
+
+                                With PSB59, you can get digital approvals for home loans ranging from ₹5 Lac to ₹5
+                                Crores within 59 minutes—through a single, streamlined application, designed to make
+                                your homeownership journey smooth and hassle-free.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="msse-enterprises-process">
+                            <div
+                                class="msse-enterprises-process-child d-flex align-items-center justify-content-center gap-2 mt-4">
+                                <img src="./assets/imgs/Income-tax-return-details-white.svg" alt="" class="w-20">
+                                <h6> digital Home loan approval upto ₹5 Crore </h6>
+                            </div>
+                            <div
+                                class="msse-enterprises-process-child d-flex align-items-center justify-content-center gap-2 float-start my-3 my-md-5 ms-md-5">
+                                <img src="./assets/imgs/Income-tax-return-details-white.svg" alt="" class="w-20">
+                                <h6> simple online application process</h6>
+                            </div>
+                            <div
+                                class="msse-enterprises-process-child d-flex align-items-center justify-content-center gap-2">
+                                <img src="./assets/imgs/Income-tax-return-details-white.svg" alt="" class="w-20">
+                                <h6> digital approval in 59 minutes</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row loan-types">
+                    <div class="col-md-6">
+                        <div class="loan-type-info   position-relative pb-2">
+                            <h2 class="text-white fs-3 mt-5 pe-5">eligibility & documentation
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="accordion loan-types-acor mt-5 mt-md-0" id="loanAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        ITR for minimum one year in xml format
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#loanAccordion">
+                                    <div class="accordion-body">
+                                        you will need to upload income tax return proof in xml format which can be
+                                        downloaded from income tax portal
+
+                                        latest 1 year ITR is mandatory
+
+                                        if you are not required to file income tax return, you can manually declare your
+                                        income details for last year
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Bank statements for the last 6 months in pdf format
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#loanAccordion">
+                                    <div class="accordion-body">
+                                        you will need to upload latest 6 month bank statement in pdf files, which can be
+                                        downloaded from your bank's net banking portal or your bank's mobile app
+
+                                        a single file of latest 6 months can be uploaded
+
+                                        if you have multiple files which adds up to latest 6 months of transaction those
+                                        can be uploaded too
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        Other details
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#loanAccordion">
+                                    <div class="accordion-body">
+                                        home & loan requirement details
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container my-5">
+                <div class="note-section fs-6">
+                    <span class="note-label fs-5">note :</span>
+                    Minimum Home Loan Amount - Rs. 10,000<span class="dot">•</span>
+                    Maximum Home Loan Amount - Rs. 10,00,00,000<span class="dot">•</span>
+                    Minimum Home Loan Repayment Tenure - 1 Year <span class="dot">•</span>
+                    Maximum Home Loan Repayment Tenure- 50 Years. <span class="dot">•</span>
+                    Interest Rate: Ranging from 6.8 % to 21% depending on customer’s credit and risk profile <span
+                        class="dot">•</span>
+                    Processing Fee: Ranging from 0.1% to 6 % depending on customer’s credit and risk profile <span
+                        class="dot">•</span>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-sec my-5">
+            <div class="container">
+                <div class="faq-heading text-center">
+                    <h2 class="fs-3 fw-bold pb-3 text-center">Frequently Asked Questions</h2>
+                </div>
+                <div class="accordion faq-sec-testimonial my-5" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                What is a co-applicant?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body fs-6">
+                                A co-applicant is a person who applies for a loan along with primary borrower and who is
+                                equally liable to repay the loan. Any blood relative or immediate family member or
+                                spouse of the borrower can be a co-applicant.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Is it mandatory to add a Co-Applicant?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                No, it is not mandatory to add a co-applicant to avail the digital approval for Home
+                                loan. Though, adding a co-applicant might increase the chances of getting higher loan
+                                eligibility. You can add three co-applicants for Home loan.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What if I do not file/have Income Tax Return/ Banking Details?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                In case the borrower has not filed ITR as borrower’s income is less than limit for
+                                filing the ITR, the borrower can provide income by self-declaring. if the borrower does
+                                not have valid bank statement for past six month, then borrower will not be able to
+                                continue journey.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                what is the interest rate for the loan?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Interest rates vary based on the loan amount, term, and borrower profile. Competitive
+                                rates are offered starting from 8.5% per annum. </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                How long does it take to get a loan approved?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Most loans are approved within 24–48 hours once all required documents are submitted.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer-main">
+            <div class="copyright-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>© Copyright 2014-2025. All Rights Reserved.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <iframe width="100%" height="350"
+                    src="https://www.youtube.com/embed/fuiiJuB7tJs?autoplay=1&mute=1&loop=1&playlist=fuiiJuB7tJs"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $('.carousel-testimonial').owlCarousel({
+            loop: true,
+            margin: 0,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

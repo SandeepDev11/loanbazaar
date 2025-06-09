@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" dir="ltr"
+  data-theme="theme-default" data-assets-path="../../assets/" data-template="vertical-menu-template">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Dashboard</title>
+
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="../../assets/vendor/fonts/fontawesome.css" />
+  <link rel="stylesheet" href="../../assets/vendor/fonts/tabler-icons.css" />
+  <link rel="stylesheet" href="../../assets/vendor/fonts/flag-icons.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="../../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="../../assets/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" href="../../assets/vendor/libs/node-waves/node-waves.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/sweetalert2/sweetalert2.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/select2/select2.css" />
+  <link rel="stylesheet" href="../../assets/vendor/libs/@form-validation/umd/styles/index.min.css" />
+  <script src="../../assets/vendor/js/helpers.js"></script>
+  <script src="../../assets/vendor/js/template-customizer.js"></script>
+  <script src="../../assets/js/config.js"></script>
+</head>
+
+<body>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <div class="app-brand demo">
+          <a href="/" class="app-brand-link">
+            <img src="../../assets/img/branding/sitelogo.png" alt="" class="img-fluid pe-4">
+          </a>
+
+          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+            <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+            <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+          </a>
+        </div>
+
+        <div class="menu-inner-shadow"></div>
+
+        <ul class="menu-inner py-1">
+          <!-- Dashboards -->
+          <li class="menu-item">
+            <a href="dashboard.html" class="menu-link ">
+              <i class="menu-icon tf-icons ti ti-smart-home"></i>
+              <div data-i18n="Dashboard">Dashboard</div>
+            </a>
+
+          </li>
+
+          <!-- Profile Pages -->
+          <li class="menu-item">
+            <a href="profile.html" class="menu-link">
+              <i class="menu-icon ti ti-user-circle"></i>
+              <div data-i18n="Profile">Profile</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="track-application.html" class="menu-link">
+              <i class="menu-icon ti ti-building-bank"></i>
+              <div data-i18n="Track Application">Track Application</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="loan-applied.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-files"></i>
+              <div data-i18n="Loan Applied">Loan Applied</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/" class="menu-link">
+              <i class="menu-icon ti ti-home-heart"></i>
+              <div data-i18n="Home">Home</div>
+            </a>
+          </li>
+
+
+        </ul>
+      </aside>
+
+      <div class="layout-page">
+        <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar">
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="ti ti-menu-2 ti-sm"></i>
+            </a>
+          </div>
+
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <div class="navbar-nav align-items-center">
+              <div class="nav-item navbar-search-wrapper mb-0">
+                <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                  <i class="ti ti-search ti-md me-2"></i>
+                  <span class="d-none d-md-inline-block text-muted">Search (Ctrl+/)</span>
+                </a>
+              </div>
+            </div>
+
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside" aria-expanded="false">
+                  <i class="ti ti-bell ti-md"></i>
+                  <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end py-0">
+                  <li class="dropdown-menu-header border-bottom">
+                    <div class="dropdown-header d-flex align-items-center py-3">
+                      <h5 class="text-body mb-0 me-auto">Notification</h5>
+                      <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Mark all as read"><i class="ti ti-mail-opened fs-4"></i></a>
+                    </div>
+                  </li>
+                  <li class="dropdown-notifications-list scrollable-container">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                            <small class="text-muted">1h ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <span class="avatar-initial rounded-circle bg-label-danger">CF</span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Charles Franklin</h6>
+                            <p class="mb-0">Accepted your connection</p>
+                            <small class="text-muted">12hr ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <img src="../../assets/img/avatars/2.png" alt class="h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">New Message ✉️</h6>
+                            <p class="mb-0">You have new message from Natalie</p>
+                            <small class="text-muted">1h ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <span class="avatar-initial rounded-circle bg-label-success"><i
+                                  class="ti ti-shopping-cart"></i></span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Whoo! You have new order 🛒</h6>
+                            <p class="mb-0">ACME Inc. made new order $1,154</p>
+                            <small class="text-muted">1 day ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <img src="../../assets/img/avatars/9.png" alt class="h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Application has been approved 🚀</h6>
+                            <p class="mb-0">Your ABC project application has been approved.</p>
+                            <small class="text-muted">2 days ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <span class="avatar-initial rounded-circle bg-label-success"><i
+                                  class="ti ti-chart-pie"></i></span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Monthly report is generated</h6>
+                            <p class="mb-0">July monthly financial report is generated</p>
+                            <small class="text-muted">3 days ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <img src="../../assets/img/avatars/5.png" alt class="h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Send connection request</h6>
+                            <p class="mb-0">Peter sent you connection request</p>
+                            <small class="text-muted">4 days ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <img src="../../assets/img/avatars/6.png" alt class="h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">New message from Jane</h6>
+                            <p class="mb-0">Your have new message from Jane</p>
+                            <small class="text-muted">5 days ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <span class="avatar-initial rounded-circle bg-label-warning"><i
+                                  class="ti ti-alert-triangle"></i></span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">CPU is running high</h6>
+                            <p class="mb-0">CPU Utilization Percent is currently at 88.63%,</p>
+                            <small class="text-muted">5 days ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"><span
+                                class="badge badge-dot"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><span
+                                class="ti ti-x"></span></a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-menu-footer border-top">
+                    <a href="javascript:void(0);"
+                      class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center">
+                      View all notifications
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="avatar avatar-online">
+                    <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="pages-account-settings-account.html">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar avatar-online">
+                            <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="fw-medium d-block">John Doe</span>
+                          <small class="text-muted">Admin</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages-profile-user.html">
+                      <i class="ti ti-user-check me-2 ti-sm"></i>
+                      <span class="align-middle">My Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages-account-settings-account.html">
+                      <i class="ti ti-settings me-2 ti-sm"></i>
+                      <span class="align-middle">Settings</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages-account-settings-billing.html">
+                      <span class="d-flex align-items-center align-middle">
+                        <i class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"></i>
+                        <span class="flex-grow-1 align-middle">Billing</span>
+                        <span
+                          class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20">2</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages-faq.html">
+                      <i class="ti ti-help me-2 ti-sm"></i>
+                      <span class="align-middle">FAQ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages-pricing.html">
+                      <i class="ti ti-currency-dollar me-2 ti-sm"></i>
+                      <span class="align-middle">Pricing</span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+                      <i class="ti ti-logout me-2 ti-sm"></i>
+                      <span class="align-middle">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="navbar-search-wrapper search-input-wrapper d-none">
+            <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..."
+              aria-label="Search..." />
+            <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+          </div>
+        </nav>
+
+        <div class="content-wrapper">
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="row">
+              <div class="dashboardTitle">
+                <h3 class="pt-3 mb-1">
+                  <span class="fw-bold">Dashboard</span>
+                </h3>
+                <p>Hello <span class="fw-semibold">Mr. Soun</span>, Welcome to <b>Loan Bazaar</b></span></p>
+              </div>
+              <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
+
+                <div class="row">
+                  <!-- Card 1 -->
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card p-0 mb-4 card-1">
+                      <div class="card-body dashboard-cardMenu">
+                        <div class="top">
+                          <i class="fa-solid fa-clock"></i>
+                          <h5 class="mb-0">Total Application</h5>
+                        </div>
+                        <h3>1,500</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card p-0 mb-4 card-2">
+                      <div class="card-body dashboard-cardMenu">
+                        <div class="top">
+                          <i class="fa-solid fa-chart-line"></i>
+                          <h5 class="mb-0">Loan Approval</h5>
+                        </div>
+                        <h3>61%</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card p-0 mb-4 card-3">
+                      <div class="card-body dashboard-cardMenu">
+                        <div class="top">
+                          <i class="fa-solid fa-wallet"></i>
+                          <h5 class="mb-0">Loan Processing Activity</h5>
+                        </div>
+                        <h3>35%</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 order-0 order-md-1">
+                    <div class="titleCard pt-3 px-1">
+                      <h4 class="fw-bold">Track Application</h4>
+                    </div>
+                    <div class="card">
+                      <div class="table-responsive text-nowrap">
+                        <table class="table table-sm">
+                          <thead>
+                            <tr>
+                              <th class="fw-bold">Application No.</th>
+                              <th class="fw-bold">Username</th>
+                              <th class="fw-bold">Email</th>
+                              <th class="fw-bold">Phone</th>
+                              <th class="fw-bold">Loan Type</th>
+                              <th class="fw-bold">Loan Amount</th>
+                              <th class="fw-bold">Date</th>
+                              <th class="fw-bold">Branch</th>
+                              <th class="fw-bold">Status</th>
+                              <th class="fw-bold">Remarks</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-border-bottom-0">
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-angular icon-md text-danger me-4"></i><span
+                                  class="fw-medium">#6589</span></td>
+                              <td class="py-2">Mohan</td>
+                              <td class="py-2">mohan@mail.com</td>
+                              <td class="py-2">9876543210</td>
+                              <td class="py-2">Personal</td>
+                              <td class="py-2">₹5,00,000</td>
+                              <td class="py-2">05-06-2025</td>
+                              <td class="py-2">Delhi</td>
+                              <td class="py-2"><span class="badge bg-label-primary me-1">Approved</span></td>
+                              <td class="py-2">Funds disbursed</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-react-native icon-md text-info me-4"></i><span
+                                  class="fw-medium">#1578</span></td>
+                              <td class="py-2">Raju</td>
+                              <td class="py-2">raju@mail.com</td>
+                              <td class="py-2">9123456789</td>
+                              <td class="py-2">Property</td>
+                              <td class="py-2">₹50,00,000</td>
+                              <td class="py-2">03-06-2025</td>
+                              <td class="py-2">Hyderabad</td>
+                              <td class="py-2"><span class="badge bg-label-success me-1">Submitted</span></td>
+                              <td class="py-2">Awaiting documents</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-bootstrap icon-md text-primary me-4"></i><span
+                                  class="fw-medium">#8765</span></td>
+                              <td class="py-2">John</td>
+                              <td class="py-2">john.doe@mail.com</td>
+                              <td class="py-2">9988776655</td>
+                              <td class="py-2">Car</td>
+                              <td class="py-2">₹3,00,000</td>
+                              <td class="py-2">05-06-2025</td>
+                              <td class="py-2">Bangalore</td>
+                              <td class="py-2"><span class="badge bg-label-warning me-1">In Review</span></td>
+                              <td class="py-2">Verification pending</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-bootstrap icon-md text-danger me-4"></i><span
+                                  class="fw-medium">#6765</span></td>
+                              <td class="py-2">John</td>
+                              <td class="py-2">john.doe@mail.com</td>
+                              <td class="py-2">9988776655</td>
+                              <td class="py-2">Car</td>
+                              <td class="py-2">₹3,00,000</td>
+                              <td class="py-2">05-06-2025</td>
+                              <td class="py-2">Bangalore</td>
+                              <td class="py-2"><span class="badge bg-label-danger me-1">Rejected</span></td>
+                              <td class="py-2">Low CIBIL score</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-vue icon-md text-success me-4"></i><span
+                                  class="fw-medium">#2345</span></td>
+                              <td class="py-2">Priya</td>
+                              <td class="py-2">priya@mail.com</td>
+                              <td class="py-2">9845123456</td>
+                              <td class="py-2">Education</td>
+                              <td class="py-2">₹8,00,000</td>
+                              <td class="py-2">02-06-2025</td>
+                              <td class="py-2">Pune</td>
+                              <td class="py-2"><span class="badge bg-label-primary me-1">Approved</span></td>
+                              <td class="py-2">Document verified</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-react icon-md text-warning me-4"></i><span
+                                  class="fw-medium">#9987</span></td>
+                              <td class="py-2">Anil</td>
+                              <td class="py-2">anil.kumar@mail.com</td>
+                              <td class="py-2">9765432100</td>
+                              <td class="py-2">Business</td>
+                              <td class="py-2">₹15,00,000</td>
+                              <td class="py-2">01-06-2025</td>
+                              <td class="py-2">Mumbai</td>
+                              <td class="py-2"><span class="badge bg-label-warning me-1">In Review</span></td>
+                              <td class="py-2">Site inspection</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-html5 icon-md text-secondary me-4"></i><span
+                                  class="fw-medium">#3344</span></td>
+                              <td class="py-2">Sneha</td>
+                              <td class="py-2">sneha.r@mail.com</td>
+                              <td class="py-2">9911223344</td>
+                              <td class="py-2">Home Renovation</td>
+                              <td class="py-2">₹2,50,000</td>
+                              <td class="py-2">04-06-2025</td>
+                              <td class="py-2">Chennai</td>
+                              <td class="py-2"><span class="badge bg-label-success me-1">Submitted</span></td>
+                              <td class="py-2">Address check pending</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-github icon-md text-dark me-4"></i><span
+                                  class="fw-medium">#4455</span></td>
+                              <td class="py-2">Vikram</td>
+                              <td class="py-2">vikram@mail.com</td>
+                              <td class="py-2">9876123450</td>
+                              <td class="py-2">Gold Loan</td>
+                              <td class="py-2">₹1,20,000</td>
+                              <td class="py-2">05-06-2025</td>
+                              <td class="py-2">Jaipur</td>
+                              <td class="py-2"><span class="badge bg-label-primary me-1">Approved</span></td>
+                              <td class="py-2">Process complete</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-git icon-md text-danger me-4"></i><span
+                                  class="fw-medium">#5566</span></td>
+                              <td class="py-2">Alok</td>
+                              <td class="py-2">alok.verma@mail.com</td>
+                              <td class="py-2">9000012345</td>
+                              <td class="py-2">Personal</td>
+                              <td class="py-2">₹4,00,000</td>
+                              <td class="py-2">06-06-2025</td>
+                              <td class="py-2">Bhopal</td>
+                              <td class="py-2"><span class="badge bg-label-danger me-1">Rejected</span></td>
+                              <td class="py-2">Incomplete form</td>
+                            </tr>
+                            <tr>
+                              <td class="py-2"><i
+                                  class="icon-base ti tabler-brand-nextjs icon-md text-success me-4"></i><span
+                                  class="fw-medium">#6677</span></td>
+                              <td class="py-2">Neha</td>
+                              <td class="py-2">neha.sharma@mail.com</td>
+                              <td class="py-2">9998877665</td>
+                              <td class="py-2">Education</td>
+                              <td class="py-2">₹10,00,000</td>
+                              <td class="py-2">06-06-2025</td>
+                              <td class="py-2">Lucknow</td>
+                              <td class="py-2"><span class="badge bg-label-primary me-1">Approved</span></td>
+                              <td class="py-2">Disbursed today</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                    </div>
+                    <!-- /Invoice table -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                <div class="card-custom bar-chart">
+                  <h5 class="fw-bold"><i class="fa-solid fa-chart-line me-2 text-primary"></i>Loan Approval Rate</h5>
+                  <div class="bar">
+                    <div class="bar-label">Home Loan</div>
+                    <div class="bar-fill home-loan"><span></span></div>
+                  </div>
+                  <div class="bar">
+                    <div class="bar-label">Car Loan</div>
+                    <div class="bar-fill car-loan"><span></span></div>
+                  </div>
+                  <div class="bar">
+                    <div class="bar-label">Business Loan</div>
+                    <div class="bar-fill business-loan"><span></span></div>
+                  </div>
+                  <div class="bar">
+                    <div class="bar-label">Education Loan</div>
+                    <div class="bar-fill education-loan"><span></span></div>
+                  </div>
+                  <div class="bar">
+                    <div class="bar-label">Personal Loan</div>
+                    <div class="bar-fill personal-loan"><span></span></div>
+                  </div>
+                </div>
+
+
+                <div class="donut-wrapper">
+                  <h6 class="text-white"><i class="fa-solid fa-circle-notch me-2 text-white"></i>Loan Processing
+                    Activity</h6>
+                  <div class="donut-chart"></div>
+
+                  <div class="legend mt-3">
+                    <div class="legend-item">
+                      <div class="legend-circle application"></div>
+                      <div>60%<br>Application</div>
+                    </div>
+                    <div class="legend-item">
+                      <div class="legend-circle verification"></div>
+                      <div>25%<br>Verification</div>
+                    </div>
+                    <div class="legend-item">
+                      <div class="legend-circle disbursal"></div>
+                      <div>15%<br>Disbursal</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl">
+              <div class="footer-container pb-5 pt-3">
+                <div class="text-center">
+                  © Copyright 2014-2025. All Rights Reserved.
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          <div class="content-backdrop fade"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+  </div>
+  <!-- / Layout wrapper -->
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+
+  <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="../../assets/vendor/libs/popper/popper.js"></script>
+  <script src="../../assets/vendor/js/bootstrap.js"></script>
+  <script src="../../assets/vendor/libs/node-waves/node-waves.js"></script>
+  <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="../../assets/vendor/libs/hammer/hammer.js"></script>
+  <script src="../../assets/vendor/libs/i18n/i18n.js"></script>
+  <script src="../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="../../assets/vendor/js/menu.js"></script>
+
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+  <script src="../../assets/vendor/libs/moment/moment.js"></script>
+  <script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+  <script src="../../assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
+  <script src="../../assets/vendor/libs/cleavejs/cleave.js"></script>
+  <script src="../../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+  <script src="../../assets/vendor/libs/select2/select2.js"></script>
+  <script src="../../assets/vendor/libs/@form-validation/umd/bundle/popular.min.js"></script>
+  <script src="../../assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js"></script>
+  <script src="../../assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="../../assets/js/main.js"></script>
+
+  <!-- Page JS -->
+  <script src="../../assets/js/modal-edit-user.js"></script>
+  <script src="../../assets/js/app-ecommerce-customer-detail.js"></script>
+  <script src="../../assets/js/app-ecommerce-customer-detail-overview.js"></script>
+</body>
+
+</html>
