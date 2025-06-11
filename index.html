@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Bazaar</title>
+    <title>MyLoanXperts</title>
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
@@ -159,202 +160,158 @@
         </header>
 
         <section class="hero banner home-page-section indexPageBanner">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators bannerCrouselIndicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
+                        aria-current="true" aria-label="Personal Loan"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                        aria-label="Home Loan"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                        aria-label="Business Loan"></button>
                 </div>
+
                 <div class="carousel-inner">
+
+                    <!-- Personal Loan Slide -->
                     <div class="carousel-item active" data-bs-interval="10000">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="bannerContent">
-                                        <section class="home-page-section">
-                                            <div class="wid-85p hero_content position-relative z-1">
-                                                <h1 class="bannerTitle text-white">Welcome to Loan Bazaar
-                                                </h1>
-                                                <h1 class="txt-white banner-h2 font-24 txt-medium mb-4"
-                                                    style="color:#ffffff">Get <span class="txt-white">FREE </span>Credit
-                                                    Score in just a minute</h1>
-
-                                                <div class="bottom-home-banner">
-                                                    <form
-                                                        class="form-group login-input homePage-signup-form text-center"
-                                                        novalidate="novalidate">
-                                                        <div class="row mg-tp-15">
-                                                            <div class="col-md-5">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon">
-                                                                        <p class="txt-medium mt-0">+91</p>
-                                                                    </span>
-                                                                    <label class="txt-regular animate-label"
-                                                                        for="login-mobile-number">
-                                                                    </label>
-                                                                    <input
-                                                                        class="number-only-field form-control input-lg pd-lt-0"
-                                                                        id="login-mobile-number" type="tel"
-                                                                        name="phone_home" maxlength="10" minlength="10"
-                                                                        placeholder="Enter Mobile Number">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-5 d-flex">
-                                                                <input
-                                                                    class="btn btn-primary tc-check get-started-home-btn txt-medium"
-                                                                    type="submit" value="Get Started">
-                                                            </div>
-                                                            <p class="txt-white text-start py-3" id="desktop-consent">By
-                                                                logging in, I agree to the
-                                                                <a class="txt-white underline"
-                                                                    href="/terms-and-conditions/">Terms &amp; Conditions
-                                                                </a>and <a class="txt-white underline"
-                                                                    href="/privacy-promise">Privacy Policy</a>
-                                                            </p>
+                                        <div class="hero_content position-relative z-1 text-center">
+                                            <h1 class="bannerTitle text-white text-center text-lg-start">Instant Personal Loans</h1>
+                                            <h2 class="banner-h2 font-24 txt-medium mb-0 mb-lg-4 text-white text-center text-lg-start">Get up to ₹5 Lakhs
+                                                with minimal documentation</h2>
+                                            <form class="form-group login-input homePage-signup-form text-center text-lg-start">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <p class="txt-medium mt-0">+91</p>
+                                                            </span>
+                                                            <input class="form-control input-lg" type="tel"
+                                                                maxlength="10" placeholder="Enter Mobile Number">
                                                         </div>
-                                                    </form>
+                                                    </div>
+                                                    <div class="col-md-5 d-flex">
+                                                        <a href="./loan-apply-form/index.html"
+                                                            class="btn btn-primary get-started-home-btn text-white">Apply
+                                                            Now</a>
+                                                    </div>
+                                                    <p class="txt-white text-start py-0 py-lg-3 text-center text-lg-start d-none d-lg-block">By logging in, I agree to the
+                                                        <a class="txt-white underline"
+                                                            href="/terms-and-conditions/">Terms</a> and <a
+                                                            class="txt-white underline" href="/privacy-promise">Privacy
+                                                            Policy</a></p>
                                                 </div>
-
-                                            </div>
-                                        </section>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="bannerImg">
-                                        <img src="./assets/imgs/bannerImg.png" alt="bannerImg" class="img-fluid">
+                                        <img src="./assets/imgs/bannerImg.png" alt="Personal Loan" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+
+                    <!-- Home Loan Slide -->
+                    <div class="carousel-item" data-bs-interval="8000">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="bannerContent">
-                                        <section class="home-page-section">
-                                            <div class="wid-85p hero_content position-relative z-1">
-                                                <h1 class="bannerTitle text-white">Welcome to Loan Bazaar
-                                                </h1>
-                                                <h1 class="txt-white banner-h2 font-24 txt-medium mb-4"
-                                                    style="color:#ffffff">Get <span class="txt-white">FREE </span>Credit
-                                                    Score in just a minute</h1>
-
-                                                <div class="bottom-home-banner">
-                                                    <form
-                                                        class="form-group login-input homePage-signup-form text-center"
-                                                        novalidate="novalidate">
-                                                        <div class="row mg-tp-15">
-                                                            <div class="col-md-5">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon">
-                                                                        <p class="txt-medium">+91</p>
-                                                                    </span>
-                                                                    <label class="txt-regular animate-label"
-                                                                        for="login-mobile-number">
-                                                                    </label>
-                                                                    <input
-                                                                        class="number-only-field form-control input-lg pd-lt-0"
-                                                                        id="login-mobile-number" type="tel"
-                                                                        name="phone_home" maxlength="10" minlength="10"
-                                                                        placeholder="Enter Mobile Number">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-5 d-flex">
-                                                                <input
-                                                                    class="btn btn-primary tc-check get-started-home-btn txt-medium"
-                                                                    type="submit" value="Get Started">
-                                                            </div>
-                                                            <p class="txt-white text-start py-3" id="desktop-consent">By
-                                                                logging in, I agree to the
-                                                                <a class="txt-white underline"
-                                                                    href="/terms-and-conditions/">Terms &amp; Conditions
-                                                                </a>and <a class="txt-white underline"
-                                                                    href="/privacy-promise">Privacy Policy</a>
-                                                            </p>
+                                        <div class="hero_content position-relative z-1 text-center">
+                                            <h1 class="bannerTitle text-white text-center text-lg-start">Affordable Home Loans</h1>
+                                            <h2 class="banner-h2 font-24 txt-medium mb-0 mb-lg-4 text-white text-center text-lg-start">Turn your dream
+                                                home into reality with easy EMIs</h2>
+                                            <form class="form-group login-input homePage-signup-form text-center text-lg-start">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <p class="txt-medium mt-0">+91</p>
+                                                            </span>
+                                                            <input class="form-control input-lg" type="tel"
+                                                                maxlength="10" placeholder="Enter Mobile Number">
                                                         </div>
-                                                    </form>
+                                                    </div>
+                                                    <div class="col-md-5 d-flex">
+                                                        <a href="./loan-apply-form/index.html"
+                                                            class="btn btn-primary get-started-home-btn text-white">Apply
+                                                            Now</a>
+                                                    </div>
+                                                    <p class="txt-white text-start py-0 py-lg-3 text-center text-lg-start d-none d-lg-block">By logging in, I agree to the
+                                                        <a class="txt-white underline"
+                                                            href="/terms-and-conditions/">Terms</a> and <a
+                                                            class="txt-white underline" href="/privacy-promise">Privacy
+                                                            Policy</a></p>
                                                 </div>
-
-                                            </div>
-                                        </section>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="bannerImg">
-                                        <img src="./assets/imgs/bannerImg.png" alt="bannerImg" class="img-fluid">
+                                        <img src="./assets/imgs/home-loan-banner.png" alt="Home Loan" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+
+                    <!-- Business Loan Slide -->
+                    <div class="carousel-item" data-bs-interval="8000">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="bannerContent">
-                                        <section class="home-page-section">
-                                            <div class="wid-85p hero_content position-relative z-1">
-                                                <h1 class="bannerTitle text-white">Welcome to Loan Bazaar
-                                                </h1>
-                                                <h1 class="txt-white banner-h2 font-24 txt-medium mb-4"
-                                                    style="color:#ffffff">Get <span class="txt-white">FREE </span>Credit
-                                                    Score in just a minute</h1>
-
-                                                <div class="bottom-home-banner">
-                                                    <form
-                                                        class="form-group login-input homePage-signup-form text-center"
-                                                        novalidate="novalidate">
-                                                        <div class="row mg-tp-15">
-                                                            <div class="col-md-5">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon">
-                                                                        <p class="txt-medium">+91</p>
-                                                                    </span>
-                                                                    <label class="txt-regular animate-label"
-                                                                        for="login-mobile-number">
-                                                                    </label>
-                                                                    <input
-                                                                        class="number-only-field form-control input-lg pd-lt-0"
-                                                                        id="login-mobile-number" type="tel"
-                                                                        name="phone_home" maxlength="10" minlength="10"
-                                                                        placeholder="Enter Mobile Number">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-5 d-flex">
-                                                                <input
-                                                                    class="btn btn-primary tc-check get-started-home-btn txt-medium"
-                                                                    type="submit" value="Get Started">
-                                                            </div>
-                                                            <p class="txt-white text-start py-3" id="desktop-consent">By
-                                                                logging in, I agree to the
-                                                                <a class="txt-white underline"
-                                                                    href="/terms-and-conditions/">Terms &amp; Conditions
-                                                                </a>and <a class="txt-white underline"
-                                                                    href="/privacy-promise">Privacy Policy</a>
-                                                            </p>
+                                        <div class="hero_content position-relative z-1 text-center">
+                                            <h1 class="bannerTitle text-white text-center text-lg-start">Flexible Business Loans</h1>
+                                            <h2 class="banner-h2 font-24 txt-medium mb-0 mb-lg-4 text-white text-center text-lg-start">Empower your
+                                                business with customized funding options</h2>
+                                            <form class="form-group login-input homePage-signup-form text-center text-lg-start">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <p class="txt-medium mt-0">+91</p>
+                                                            </span>
+                                                            <input class="form-control input-lg" type="tel"
+                                                                maxlength="10" placeholder="Enter Mobile Number">
                                                         </div>
-                                                    </form>
+                                                    </div>
+                                                    <div class="col-md-5 d-flex">
+                                                        <a href="./loan-apply-form/index.html"
+                                                            class="btn btn-primary get-started-home-btn text-white">Apply
+                                                            Now</a>
+                                                    </div>
+                                                    <p class="txt-white text-start py-0 py-lg-3 text-center text-lg-start d-none d-lg-block">By logging in, I agree to the
+                                                        <a class="txt-white underline"
+                                                            href="/terms-and-conditions/">Terms</a> and <a
+                                                            class="txt-white underline" href="/privacy-promise">Privacy
+                                                            Policy</a></p>
                                                 </div>
-
-                                            </div>
-                                        </section>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="bannerImg">
-                                        <img src="./assets/imgs/bannerImg.png" alt="bannerImg" class="img-fluid">
+                                        <img src="./assets/imgs/serviceBanner.png" alt="Business Loan"
+                                            class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
+
 
         <section class="products-section">
             <div class="container">
@@ -1880,11 +1837,12 @@
                             <li>Business Registration Proof</li>
                             <li>Latest Audited Financials</li>
                             <div class="d-flex gap-3 flex-wrap pt-3">
-                                <a href="./loan-apply-form/loan-form.html" class="text-white">
+                                <a href="./loan-apply-form/index.html" class="text-white">
                                     <button class="btn btn-primary px-5 py-3 rounded-3">Apply Now</button>
                                 </a>
                                 <a href="./loan-form.html" class="text-white">
-                                    <button class="btn btn-outline-primary px-5 py-3 rounded-3">Download Brochure</button>
+                                    <button class="btn btn-outline-primary px-5 py-3 rounded-3">Download
+                                        Brochure</button>
                                 </a>
                             </div>
                         </ul>
