@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyLoanXperts</title>
-        <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
@@ -181,14 +182,14 @@
             <div class="container">
                 <div class="section-title mb16 m-hidden d-flex align-items-center justify-content-center flex-column">
                     <span class="heading-subtitle wow fadeInUp animated animated animated"
-                        style="visibility: visible; animation-name: fadeInUp;"><img draggable="false" role="img"
-                            class="emoji" alt="🤝" src="./assets/imgs/handSvg.svg"> Popular
+                        style="visibility: visible; animation-name: fadeInUp;" data-aos="zoom-in"><img draggable="false"
+                            role="img" class="emoji" alt="🤝" src="./assets/imgs/handSvg.svg"> Popular
                         Products</span>
-                    <h2>Our Services</h2>
+                    <h2 data-aos="zoom-in">Our Services</h2>
                 </div>
                 <div class="our-products row" id="ourProducts">
 
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-6">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-6" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="creditCards">
                             <div class="pb-product inactive">
                                 <span class="pre-approved-tag m-shown">Get Best Offers</span>
@@ -252,7 +253,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-7">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-7" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="personalLoan">
                             <div class="pb-product inactive">
                                 <h1 class="product-name">Personal Loan</h1>
@@ -359,30 +360,7 @@
                             </div>
                         </a>
                     </div>
-
-                    <!-- <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-8">
-                <a href="./service-detail.html">
-                    <div class="pb-product sponsorTag">
-                        <h1 class="product-name">Micro Loans <span>(Under ₹50K)</span></h1>
-                        <p class="product-desc">Instant small ticket loans to meet your immediate cash needs</p>
-                        <span class="m-hidden bestTag">Get Instant Loan <e><img src="PBHP/assets/images/blue-right-arrow.svg" alt="blue arrow"/></e></span>
-                        <div class="product-icon">
-                         
-                            <svg width="60" height="60" shape-rendering="geometricPrecision">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path d="M42.6484667 11.3567297c0 4.7993326-3.9326667 8.6896552-8.7846667 8.6896552-4.8513333 0-8.7846667-3.8903226-8.7846667-8.6896552 0-4.79866518 3.9333334-8.68965517 8.7846667-8.68965517 4.852 0 8.7846667 3.89098999 8.7846667 8.68965517" fill="#FFD032" />
-                                    <path d="M14.97006667 35.533059L19.7614 30.5969077s2.0353333-2.5982203 5.154-2.5982203h10.146s1.3546667 3.3397108-2.0753333 4.8447164c0 0 4.8926666.0847608 8.978-2.2438265 0 0 4.8046666-3.196218 8.036.0420467l-8.844 6.6026697s-2.79 1.9701891-7.822 2.3933259c-.446.0380422-.8913334.0734149-1.3353334.1281424l-6.8846666.843604c-2.058.2516129-4.13.3784204-6.20333337.3784204h-3.94066666" fill="#F5D9BA" />
-                                    <path d="M10 33.48291448h3.09933333c1.03333334 0 1.87066667.86229143 1.87066667 1.92480533v5.37931035c0 1.06318131-.83733333 1.92480534-1.87066667 1.92480534H10" fill="#ED6262" />
-                                    <path d="M10 33.48291448h3.09933333c1.03333334 0 1.87066667.86229143 1.87066667 1.92480533v5.37931035c0 1.06318131-.83733333 1.92480534-1.87066667 1.92480534H10M14.97006667 35.533059L19.7614 30.5969077s2.0353333-2.5982203 5.154-2.5982203h10.146s1.3546667 3.3397108-2.0753333 4.8447164c0 0 4.8926666.0847608 8.978-2.2438265 0 0 4.8046666-3.196218 8.036.0420467l-8.844 6.6026697s-2.79 1.9701891-7.822 2.3933259c-.446.0380422-.8913334.0734149-1.3353334.1281424l-6.8846666.843604c-2.058.2516129-4.13.3784204-6.20333337.3784204h-3.94066666M25.5390667 32.7868076l7.4473333.0567297M42.6484667 11.3567297c0 4.7993326-3.9326667 8.6896552-8.7846667 8.6896552-4.8513333 0-8.7846667-3.8903226-8.7846667-8.6896552 0-4.79866518 3.9333334-8.68965517 8.7846667-8.68965517 4.852 0 8.7846667 3.89098999 8.7846667 8.68965517zM31.6198 7.64460512h4.488M31.6198 9.78765295h4.488" stroke="#1B325E" stroke-width="1.37931034" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M32.9472667 7.64460512c1.05 0 1.9013333 1.02647386 1.9013333 2.29187986 0 1.26607342-.8513333 1.92547275-1.9013333 1.92547275h-1.3273334l3.27 3.20689657" stroke="#1B325E" stroke-width="1.37931034" stroke-linecap="round" stroke-linejoin="round" />
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-            </div> -->
-
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-9">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-9" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="businessLoan">
                             <div class="pb-product inactive">
                                 <h1 class="product-name">Business Loan</h1>
@@ -472,10 +450,7 @@
                             </div>
                         </a>
                     </div>
-
-
-
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-11">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-11" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="homeLoan">
                             <div class="pb-product inactive">
                                 <h1 class="product-name">Home Loan</h1>
@@ -595,8 +570,7 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-13">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-13" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="loanAgainstProperty">
                             <div class="pb-product inactive">
                                 <h1 class="product-name">Loan Against Property</h1>
@@ -675,8 +649,7 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-12">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-12" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="transferHomeLoan">
                             <div class="pb-product inactive">
                                 <h1 class="product-name hl">Transfer Home Loan</h1>
@@ -771,57 +744,7 @@
                             </div>
                         </a>
                     </div>
-
-                    <!-- <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-13">
-                <a href="./service-detail.html">
-                    <div class="pb-product covid">
-                        <h1 class="product-name hl">Step up Credit Card</h1>
-                        <p class="product-desc">A Credit Card for everyone, backed by a Fixed Deposit</p>
-                        <span class="m-hidden bestTag">Know More<e><img src="PBHP/assets/images/blue-right-arrow.svg" alt="blue arrow"/></e></span>
-                        <div class="product-icon">
-                             <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <title>Artboard</title>
-                                <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="stepup-credit-card" transform="translate(9.000000, 14.000000)">
-                                        <g id="Icon">
-                                            <path d="M37.0881653,24.3193949 L1.95086337,24.3193949 C0.873977379,24.3193949 0,23.4507887 0,22.3784931 L0,9.81179743 L39.0384405,9.81179743 L39.0384405,22.3784931 C39.0384405,23.4507887 38.1650512,24.3193949 37.0881653,24.3193949" id="Fill-1" fill="#8770F7" fill-rule="nonzero"></path>
-                                            <polygon id="Fill-3" fill="#FFFFFF" fill-rule="nonzero" points="0.000411698629 9.81197299 39.0388522 9.81197299 39.0388522 5.47186825 0.000411698629 5.47186825"></polygon>
-                                            <path d="M39.0386758,5.4715756 L0.000235256795,5.4715756 L0.000235256795,1.9415457 C0.000235256795,0.869835416 0.873624499,5.85311909e-05 1.95051049,5.85311909e-05 L37.0884005,5.85311909e-05 C38.1652866,5.85311909e-05 39.0386758,0.869835416 39.0386758,1.9415457 L39.0386758,5.4715756 Z" id="Fill-5" fill="#8770F7" fill-rule="nonzero"></path>
-                                            <path d="M20.8610539,24.3193364 C16.6581881,24.3193364 10.3538895,24.3193364 1.94815792,24.3193364 C0.871860071,24.3193364 0.000235256795,23.4519008 0.000235256795,22.3819465 L0.000235256795,5.47163413 L34.0847649,5.47163413" id="Stroke-6" stroke="#1B325E" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M0.000294070736,1.9385606 C0.000294070736,0.868020947 0.871918891,0 1.94821674,0 L37.0914001,0 C38.1671098,0 39.0387346,0.868020947 39.0387346,1.9385606 L39.0387346,9.81162177 L4.83834113,9.81162177" id="Stroke-7" stroke="#1B325E" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <line x1="4.82428457" y1="19.4248221" x2="10.8162013" y2="19.4248221" id="Stroke-8" stroke="#1B325E" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></line>
-                                            <line x1="16.2625664" y1="19.4248221" x2="21.4463973" y2="19.4248221" id="Stroke-9" stroke="#1B325E" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></line>
-                                        </g>
-                                        <g id="Icon" transform="translate(24.181818, 14.080000)">
-                                            <path d="M16.2100909,15.994768 L1.60809091,15.994768 C0.720151515,15.994768 0,15.2708012 0,14.3774907 L0,1.6172773 C0,0.72426546 0.720151515,0 1.60809091,0 L16.2100909,0 C17.0980303,0 17.8181818,0.72426546 17.8181818,1.6172773 L17.8181818,14.3774907 C17.8181818,15.2708012 17.0980303,15.994768 16.2100909,15.994768" id="Fill-2" fill="#CED8E2"></path>
-                                            <path d="M16.2100909,15.994768 L1.60809091,15.994768 C0.720151515,15.994768 0,15.2708012 0,14.3774907 L0,1.6172773 C0,0.72426546 0.720151515,0 1.60809091,0 L16.2100909,0 C17.0980303,0 17.8181818,0.72426546 17.8181818,1.6172773 L17.8181818,14.3774907 C17.8181818,15.2708012 17.0980303,15.994768 16.2100909,15.994768 Z" id="Stroke-4" stroke="#1B325E" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M6.24244269,12.3893294 C5.56644269,12.3893294 5.01818182,11.8084059 5.01818182,11.0915981 L5.01818182,4.68706062 C5.01818182,3.97049248 5.56644269,3.38932935 6.24244269,3.38932935 L13.1939209,3.38932935 C13.8699209,3.38932935 14.4181818,3.97049248 14.4181818,4.68706062 L14.4181818,11.0915981 C14.4181818,11.8084059 13.8699209,12.3893294 13.1939209,12.3893294 L6.24244269,12.3893294 Z" id="Fill-6" fill="#9AAFC3"></path>
-                                            <path d="M14.4030303,8.22002163 L14.4030303,10.8731749 C14.4030303,11.7590187 13.6828788,12.4770122 12.7949394,12.4770122 L6.32021212,12.4770122 C5.43227273,12.4770122 4.71212121,11.7590187 4.71212121,10.8731749 L4.71212121,8.58339745" id="Stroke-8" stroke="#1B325E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M4.71212121,7.54208669 L4.71212121,5.121623 C4.71212121,4.23577914 5.43227273,3.51778567 6.32021212,3.51778567 L12.7949394,3.51778567 C13.6828788,3.51778567 14.4030303,4.23577914 14.4030303,5.121623" id="Stroke-10" stroke="#1B325E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M3.79636364,5.72 C4.04991254,5.72 4.279458,5.822771 4.44561623,5.98892923 C4.61177445,6.15508746 4.71454545,6.38463291 4.71454545,6.63818182 L4.71454545,6.63818182 L4.71454545,9.77302576 C4.71454545,10.0265747 4.61177445,10.2561201 4.44561623,10.4222784 C4.279458,10.5884366 4.04991254,10.6912076 3.79636364,10.6912076 C3.54281473,10.6912076 3.31326927,10.5884366 3.14711105,10.4222784 C2.98095282,10.2561201 2.87818182,10.0265747 2.87818182,9.77302576 L2.87818182,9.77302576 L2.87818182,6.63818182 C2.87818182,6.38463291 2.98095282,6.15508746 3.14711105,5.98892923 C3.31326927,5.822771 3.54281473,5.72 3.79636364,5.72 Z" id="Fill-12" stroke="#1B325E" stroke-width="1.2" fill="#FFFFFF"></path>
-                                            <line x1="4.00909091" y1="16.1429363" x2="4.00909091" y2="17.92" id="Stroke-15" stroke="#1B325E" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></line>
-                                            <line x1="14.1060606" y1="16.1429363" x2="14.1060606" y2="17.92" id="Stroke-16" stroke="#1B325E" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></line>
-                                            <g id="Group-14" transform="translate(7.636364, 6.144000)" stroke="#1B325E" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.954545455">
-                                                <path d="M2.98181818,1.976 C2.98181818,2.52828586 2.53414255,2.976 1.98171395,2.976 C1.42938958,2.976 0.981818182,2.52828586 0.981818182,1.976 C0.981818182,1.42371414 1.42938958,0.976 1.98171395,0.976 C2.53414255,0.976 2.98181818,1.42371414 2.98181818,1.976 Z" id="Stroke-18" fill="#FFFFFF"></path>
-                                                <line x1="1.95127411" y1="0" x2="1.95127411" y2="0.640080716" id="Stroke-19"></line>
-                                                <line x1="3.25421455" y1="0.557548241" x2="2.8058002" y2="1.01171228" id="Stroke-20"></line>
-                                                <line x1="3.81818182" y1="1.94802239" x2="3.18177838" y2="1.95551873" id="Stroke-21"></line>
-                                                <line x1="3.27339819" y1="3.26333544" x2="2.81848316" y2="2.81549418" id="Stroke-22"></line>
-                                                <line x1="1.98119105" y1="3.84" x2="1.96662314" y2="3.20005381" id="Stroke-23"></line>
-                                                <line x1="0.583004983" y1="3.30170261" x2="1.02491865" y2="2.84121579" id="Stroke-24"></line>
-                                                <line x1="0" y1="2.00828088" x2="0.636403436" y2="1.98601233" id="Stroke-25"></line>
-                                                <line x1="0.525732653" y1="0.596507336" x2="0.986883028" y2="1.03775676" id="Stroke-26"></line>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>                  
-                        </div>
-                    </div>
-                </a>
-            </div> -->
-
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-14 hide creditHealthTile">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-14 hide creditHealthTile" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="creditHealthReport">
                             <div class="pb-product covid inactive">
                                 <h1 class="product-name hl">Credit Health Report</h1>
@@ -902,18 +825,7 @@
                             </div>
                         </a>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-14">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-14" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="loanAgainstCar">
                             <div class="pb-product inactive">
                                 <h1 class="product-name hl">Loan Against Car</h1>
@@ -1012,8 +924,7 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-14">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-14" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="pbMoney">
                             <div class="pb-product inactive">
                                 <h1 class="product-name hl">PB Money</h1>
@@ -1103,8 +1014,7 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-14">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-14" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="capLoan">
                             <div class="pb-product inactive">
                                 <h1 class="product-name hl">Working Capital Loan</h1>
@@ -1272,13 +1182,12 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class="container">
+                    <div class="container" data-aos="zoom-in">
                         <div class="section-title mb16 m-hidden mt10">
                             <h3>Insurance &amp; Investment</h3>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-4 m-hidden">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-4 m-hidden" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="healthInsuranceCovidCovered">
                             <div class="pb-product covid inactive">
                                 <span class="pre-approved-tag">FREE Home Visit</span>
@@ -1406,7 +1315,7 @@
                         </a>
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 m-hidden">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 m-hidden" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="lifeInsuranceCovidCovered">
                             <div class="pb-product covid inactive">
                                 <span class="pre-approved-tag">Up to 15% Off</span>
@@ -1471,7 +1380,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-19 m-hidden">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 ord-19 m-hidden" data-aos="zoom-in">
                         <a href="./service-detail.html" data-ga-label="investmentPlan">
                             <div class="pb-product inactive">
                                 <span class="pre-approved-tag">Tax Free Returns</span>
@@ -1676,7 +1585,8 @@
             </div>
         </section>
 
-                <footer class="footer-main">
+
+        <footer class="footer-main">
             <div class="bg-white text-dark py-5 border-top">
                 <div class="container">
                     <div class="row gy-4">
@@ -1828,6 +1738,10 @@
                 }
             }
         })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

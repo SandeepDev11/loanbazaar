@@ -1133,6 +1133,10 @@ ul.loanNeedsList li::before {
 }
 
 @media (width < 768px) {
+  .homePage-signup-form .row {
+    flex-direction: column !important;
+    padding-top: 2rem !important;
+}
   .authWrapper {
     height: auto !important;
     padding: 2rem;
